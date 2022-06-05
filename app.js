@@ -1,4 +1,5 @@
-Vue.createApp({
+// vm stands for Vue model
+const vm = Vue.createApp({
     data() {
         return {
             firstName: "John",
@@ -6,6 +7,10 @@ Vue.createApp({
         }
     }
 }).mount('#app')
+
+/*setTimeout(() => {
+    vm.firstName = 'Bob';
+}, 2000)*/
 
 /*
 Vue.createApp({
